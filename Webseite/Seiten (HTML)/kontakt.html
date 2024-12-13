@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Balkan Bites - Kontakt</title>
+    <link rel="stylesheet" href="CSS/kontakt.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="Bilder/balkan.jpg" alt="Balkan Bites Logo">
+            </a>
+        </div>
+        <div id="header_right">
+        <h1 id="header_h1">KONTAKT</h1>
+        </div>
+    </header>
+    <main>
+        <p>Wenn Sie Fragen haben oder weitere Informationen benötigen, füllen Sie bitte das folgende Formular aus:</p>
+
+        <form id="contactForm" action="absenden.html">
+            <label for="vorname">Vorname</label>
+            <input type="text" name="vorname" id="vorname" required onchange="changeVorname()">
+
+            <label for="nachname">Nachname</label>
+            <input type="text" name="nachname" id="nachname" required onchange="changeNachname()">
+
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" required onchange="changeEmail()">
+
+            <label for="message">Nachricht</label>
+            <textarea name="message" id="message" rows="5" required onchange="changeMeassage()"></textarea>
+
+            <button class="button-89" role="button">Absenden</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Balkan Bites. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <script src="JS/Kontakt.js"></script> 
+</body>
+</html>

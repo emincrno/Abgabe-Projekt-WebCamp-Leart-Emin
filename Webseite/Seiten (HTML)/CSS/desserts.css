@@ -1,0 +1,178 @@
+header {
+    height: auto;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 200px 40px;
+}
+
+#header_navigation {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: transparent;
+    border: black 2px solid;
+    padding: 0 0 0 550px;
+}
+
+nav {
+    display: inline-block;
+    background-color: transparent;
+    padding-left: 200px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative; 
+}
+
+nav ul li a {
+    padding: 10px 15px; 
+    color: black;
+    text-decoration: none;
+    display: block; 
+}
+
+nav li:hover {
+    background-color: lightcoral; 
+}
+
+nav li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    text-align: left;
+    min-width: 160px;
+}
+
+nav ul li ul li {
+    display: block;
+    text-align: left;
+}
+
+nav ul li ul li a {
+    color: white; 
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li:hover {
+    color: black;
+}
+
+h1 {
+    margin: 0;
+}
+
+#header_h1 {
+    margin-top: 60px;
+    color: #373737;
+    font-size: 5em;
+    font-weight: 200;
+    margin-left: 100px;
+}
+
+.logo img {
+    height: 250px;
+}
+
+.logo {
+    height: auto;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: auto;
+}
+
+.rezepte {
+    
+    margin-top: 50px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto; 
+    width: 500px; 
+    height: auto;
+    margin-bottom: 50px; 
+}
+
+.arrow-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid black;
+    margin: 0 auto;
+}
+
+.arrow-label {
+    margin-top: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+.hidden-text {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.arrow-container.active .hidden-text {
+    display: block;
+}
+
+.hidden-text img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.small-image {
+    width: 400px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+body{
+    background: linear-gradient(to left, #a8e6cf, #dcedc1);
+}
+
+img {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+  }
